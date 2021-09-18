@@ -1,0 +1,279 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --base-white: #fff;
+  --base-black: #000;
+  --base-light-black: #283136;
+  --base-gray-background: #eee;
+  --base-gray-light: #dfdfdf;
+  --base-gray-dark: #d5d5d5;
+  --base-red: #e74246;
+  --base-red-light: #fb565a;
+  --base-red-dark: #d7373b;
+
+  --green: #00ca74;
+  --green-extra: #00bc6c;
+  --green-dark: #00aa62;
+
+  --yellow: #efc849;
+  --yellow-extra: #eab534;
+  --yellow-dark: #e5a722;
+
+  --gray-extra: #666;
+  --gray-extra-dark: #444;
+  --gray-extra-light: #e1e1e1;
+
+  --check-gray: #4d4d4d;
+
+  --special-gray: #a6a6a6;
+}
+
+/* Global */
+
+.main-body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--base-light-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  color: var(--base-white);
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--base-red-light);
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: var(--base-red);
+}
+
+.button:active {
+  background-color: var(--base-red-dark);
+}
+
+.button span:active {
+  opacity: 30%;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  line-height: 30px;
+  color: var(--base-black);
+  background-color: var(--base-gray-background);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.main-logo {
+  color: var(--base-black);
+  cursor: pointer;
+}
+
+.main-header-logo:hover {
+  opacity: 70%;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.site-navigation a,
+.cart-link {
+  color: var(--base-black);
+}
+
+.site-navigation a:hover,
+.cart-link:hover {
+  color: var(--base-red-light);
+}
+
+.site-navigation a:active,
+.cart-link:active {
+  color: var(--base-black);
+  opacity: 0.3;
+}
+
+/* Main-slider */
+
+.main-slider {
+  background-color: var(--base-gray-background);
+}
+
+.slider-headler {
+  color: var(--base-black);
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/* Service */
+
+.service-list {
+  list-style: none;
+}
+
+.service img {
+  background-color: var(--special-gray);
+}
+
+.service h3 {
+  color: var(--base-black);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-button-apps {
+  background-color: var(--green);
+}
+
+.service-button-presentation {
+  background-color: var(--yellow);
+}
+
+.service-button-apps:hover {
+  background-color: var(--green-extra);
+}
+
+.service-button-presentation:hover {
+  background-color: var(--yellow-extra);
+}
+
+.service-button-apps:active {
+  background-color: var(--green-dark);
+}
+
+.service-button-presentation:active {
+  background-color: var(--yellow-dark);
+}
+
+/* About */
+
+.about-headler {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.about-list {
+  list-style: none;
+}
+
+.description-list dt {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.description-list dd {
+  line-height: 18px;
+}
+
+/* Clients */
+
+.clients-list {
+  list-style: none;
+}
+
+/* Contacts */
+
+.contacts h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts-address {
+  line-height: 18px;
+  color: var(--gray-extra);
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* Main-footer */
+
+.social-list {
+  list-style: none;
+}
+
+.social-button {
+  background-color: var(--gray-extra-light);
+}
+
+.social-button:hover {
+  background-color: var(--base-red);
+}
+
+.social-button:active {
+  background-color: var(--base-red-dark);
+}
+
+.social-button img:active {
+  opacity: 0.3;
+}
+
+.main-footer-text {
+  color: var(--gray-extra-dark);
+}
+
+.main-footer-headler {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
