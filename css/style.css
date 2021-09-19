@@ -75,6 +75,8 @@ img {
   height: auto;
 }
 
+/* Buttons */
+
 .button {
   color: var(--base-white);
   line-height: 18px;
@@ -195,7 +197,7 @@ img {
 
 /* About */
 
-.about-headler {
+.about-slogan {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -212,13 +214,13 @@ img {
   list-style: none;
 }
 
-.description-list dt {
+.statistics-list dt {
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
 }
 
-.description-list dd {
+.statistics-list dd {
   line-height: 18px;
 }
 
@@ -226,6 +228,18 @@ img {
 
 .clients-list {
   list-style: none;
+}
+
+.clients-item {
+  opacity: 0.2;
+}
+
+.clients-item:hover {
+  opacity: 1;
+}
+
+.clients-item:active {
+  opacity: 0.1;
 }
 
 /* Contacts */

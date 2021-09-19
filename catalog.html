@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="favico.ico">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body>
-  <header>
-    <a href="index.html">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Главный логотип студии Nёrds">
-    </a>
-    <ul>
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
-      <li><a>Магазин</a></li>
-      <li><a href="blank.html">Контакты</a></li>
-    </ul>
-    <a href="blank.html">Корзина</a>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Главный логотип студии Nёrds">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a>Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <a class="cart-link" href="blank.html">Корзина</a>
+    </nav>
   </header>
-  <main>
+  <main class="container">
     <h1>Магазин готовых шаблонов</h1>
-    <section>
+    <section class="filter-product">
       <h2>Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
@@ -121,38 +128,38 @@
         <li><a href="#">Следующая</a></li>
       </ul>
     </section>
-    <section>
+    <section class="contacts">
       <h2>Контакты</h2>
       <h3>NЁRDS DESIGN STUDIO</h3>
-      <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
-      <a href="#">Напишите нам</a>
+      <p class="contacts-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+      <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+      <a class="button contacts-button" href="#">Напишите нам</a>
       <img src="img/map.png" alt="Карта где находится студия">
       <img src="img/map-marker.png" alt="Маркер указывающий в каком доме находится студия">
     </section>
   </main>
-  <footer>
-    <section>
+  <footer class="main-footer">
+    <section class="footer-social">
       <h2>Социальные сети</h2>
-      <ul>
-        <li>
-          <a href="https://vk.com">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-button" href="https://vk.com">
             <img src="img/socials/vk.svg" alt="">
           </a>
         </li>
-        <li>
-          <a href="https://facebook.com">
+        <li class="social-item">
+          <a class="social-button" href="https://facebook.com">
             <img src="img/socials/fb.svg" alt="">
           </a>
         </li>
-        <li>
-          <a href="https://instagram.com">
+        <li class="social-item">
+          <a class="social-button" href="https://instagram.com">
             <img src="img/socials/insta.svg" alt="">
           </a>
         </li>
       </ul>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <p class="main-footer-headler">Давайте дружить, это выгодно!</p>
+      <p class="main-footer-text">Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
 </body>
