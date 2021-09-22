@@ -52,6 +52,10 @@
   --check-gray: #4d4d4d;
 
   --special-gray: #a6a6a6;
+
+  --active-pagination: #dbdbdb;
+
+  --arrow: #231F20;
 }
 
 /* Global */
@@ -138,6 +142,10 @@ img {
 .cart-link:active {
   color: var(--base-black);
   opacity: 0.3;
+}
+
+.navigation-link.active {
+  border-bottom: 2px solid var(--base-red);
 }
 
 /* Main-slider */
@@ -240,6 +248,137 @@ img {
 
 .clients-item:active {
   opacity: 0.1;
+}
+
+/* CATALOG */
+.catalog-headler {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+/* Filter-product */
+
+.filter-product {
+
+}
+
+.form-filter legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form-button {
+  color: var(--base-black);
+  background-color: var(--base-gray-background);
+  border-radius: 3px;
+}
+
+.form-button:hover {
+  background-color: var(--base-gray-light);
+}
+
+.form-button:active {
+  background-color: var(--base-gray-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Sort-products */
+
+.sort-products {
+
+}
+
+.sort-legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.sort-products-list {
+  list-style: none;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort-link {
+  color: var(--base-black);
+  opacity: 0.3;
+}
+.sort-link.arrow {
+  color: var(--arrow);
+}
+
+.sort-link:hover {
+  opacity: 0.6;
+}
+
+.sort-link:active {
+  opacity: 1;
+}
+
+/* Products */
+
+.products-item p {
+  line-height: 18px;
+}
+
+.products-link {
+  color: var(--base-black);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.products-link:hover {
+  color: var(--base-red-light);
+}
+
+.products-link:active {
+  opacity: 0.3;
+}
+
+.products-item img {
+  background-color: var(--special-gray);
+}
+
+.products-list {
+  list-style: none;
+  line-height: 18px;
+}
+
+.products-item-button {
+  opacity: 1;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-link {
+  background-color: var(--base-gray-background);
+  color: var(--base-black);
+  font-weight: 500;
+  line-height: 18px;
+  border-radius: 3px;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-link.active:not([href]) {
+  background: transparent;
+  border: 3px solid var(--active-pagination);
+}
+
+.pagination-link:hover {
+  background-color: var(--base-gray-light);
+}
+
+.pagination-link:active {
+  background-color: var(--base-gray-dark);
 }
 
 /* Contacts */
