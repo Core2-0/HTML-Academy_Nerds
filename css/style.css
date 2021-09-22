@@ -128,23 +128,21 @@ img {
   opacity: 0.3;
 }
 
-.site-navigation a,
-.cart-link {
+.navigation-link {
   color: var(--base-black);
 }
 
-.site-navigation a:hover,
-.cart-link:hover {
+.navigation-link:hover {
   color: var(--base-red-light);
 }
 
-.site-navigation a:active,
-.cart-link:active {
+.navigation-link:active {
   color: var(--base-black);
   opacity: 0.3;
 }
 
-.navigation-link.active {
+.navigation-link.active:not([href]) {
+  color: var(--base-black);
   border-bottom: 2px solid var(--base-red);
 }
 
