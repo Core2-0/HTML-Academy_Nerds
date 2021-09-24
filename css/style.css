@@ -337,6 +337,7 @@ img {
 .catalog-page {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  column-gap: 40px;
 }
 
 .catalog-headler {
@@ -353,7 +354,7 @@ img {
 /* Filter-product */
 
 .filter-product {
-  
+  grid-row: 2 / -2;
 }
 
 .form-filter legend {
@@ -443,6 +444,8 @@ img {
 .products-list {
   list-style: none;
   line-height: 18px;
+  margin: 0 0 54px 0;
+  padding: 0;
 }
 
 .products-item-button {
@@ -451,6 +454,8 @@ img {
 
 .pagination-list {
   list-style: none;
+  margin: 0 0 60px 0;
+  padding: 0;
 }
 
 .pagination-link {
@@ -495,7 +500,7 @@ img {
 
 /* mainFooter */
 .main-footer {
-  padding: 68px 0;
+
 }
 
 .footer-social {
