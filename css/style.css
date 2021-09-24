@@ -333,17 +333,27 @@ img {
 }
 
 /* CATALOG */
+
+.catalog-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .catalog-headler {
+  grid-column: 1 / -1;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
   background-color: var(--background-gray);
+  margin: 0;
+  padding: 72px 0 108px 0;
 }
+
 /* Filter-product */
 
 .filter-product {
-
+  
 }
 
 .form-filter legend {
