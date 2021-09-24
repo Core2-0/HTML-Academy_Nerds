@@ -3,13 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Каталог</title>
+  <title>HTML Academy: Nёrds-Каталог</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="icon" href="favico.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -28,7 +31,7 @@
       <a class="navigation-link cart-link" href="blank.html">Корзина</a>
     </nav>
   </header>
-  <main class="container">
+  <main class="main-content">
     <h1 class="catalog-headler">Магазин готовых шаблонов</h1>
     <section class="filter-product">
       <h2>Фильтр товаров</h2>
@@ -65,7 +68,7 @@
         <li><a class="sort-link active" href="#">По цене</a></li>
         <li><a class="sort-link" href="#">По типу</a></li>
         <li><a class="sort-link" href="#">По названию</a></li>
-        <li><a class="sort-link arrow" href="#"><img src="img/icons/arrow.svg" alt=""></a></li>
+        <li><a class="sort-link arrow active" href="#"><img src="img/icons/arrow.svg" alt=""></a></li>
         <li><a class="sort-link arrow" href="#"><img src="img/icons/arrow.svg" alt=""></a></li>
       </ul>
     </section>
@@ -139,28 +142,32 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="footer-social">
-      <h2>Социальные сети</h2>
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-button" href="https://vk.com">
-            <img src="img/socials/vk.svg" alt="">
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="https://facebook.com">
-            <img src="img/socials/fb.svg" alt="">
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="https://instagram.com">
-            <img src="img/socials/insta.svg" alt="">
-          </a>
-        </li>
-      </ul>
-      <p class="main-footer-headler">Давайте дружить, это выгодно!</p>
-      <p class="main-footer-text">Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+    <div class="container">
+      <section class="footer-social">
+        <h2 class="sr-only">Социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-button" href="https://vk.com">
+              <img src="img/socials/vk.svg" alt="">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="https://facebook.com">
+              <img src="img/socials/fb.svg" alt="">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="https://instagram.com">
+              <img src="img/socials/insta.svg" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer-text">
+          <p class="main-footer-headler">Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </div>
   </footer>
 </body>
 
