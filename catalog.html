@@ -36,27 +36,67 @@
         <section class="filter-product">
           <h2 class="sr-only">Фильтр товаров</h2>
           <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Стоимость:</legend>
-              <input type="range" name="priceholder" id="priceholder" min="0" max="150000" step="1">
-              <p>
-                <label>от<input type="text" value="0"></label>
-                <label>до<input type="text" value="150000"></label>
-              </p>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 30%; margin-left: 20%;"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 20%;"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 50%;"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Сетка:</legend>
-              <label><input type="radio" name="grid" checked>Адаптивная</label>
-              <label><input type="radio" name="grid">Фиксированная</label>
-              <label><input type="radio" name="grid">Резиновая</label>
+              <ul class="filter-list">
+                <li class="filter-option filter-radio">
+                  <input class="sr-only filter-input-radio filter-input" type="radio" name="grid" value="adaptive-grid" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="sr-only filter-input-radio filter-input" type="radio" name="grid" value="fixed-grid" id="filter-fixed" checked>
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="sr-only filter-input-radio filter-input" type="radio" name="grid" value="rubber-grid" id="filter-rubber" checked>
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Особенности:</legend>
-              <label><input type="checkbox" name="features" value="slider" checked>Слайдер</label>
-              <label><input type="checkbox" name="features" value="advantages">Блок преимуществ</label>
-              <label><input type="checkbox" name="features" value="news" checked>Новости</label>
-              <label><input type="checkbox" name="features" value="gallery">Галлерея</label>
-              <label><input type="checkbox" name="features" value="shops-bin">Корзина</label>
+              <ul class="filter-list">
+                <li class="filter-option filter-checkbox">
+                  <input class="sr-only filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="sr-only filter-input-checkbox filter-input" type="checkbox" name="advantages" value="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="sr-only filter-input-checkbox filter-input" type="checkbox" name="news" value="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="sr-only filter-input-checkbox filter-input" type="checkbox" name="gallery" value="filter-gallery">
+                  <label for="filter-gallery">Галлерея</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="sr-only filter-input-checkbox filter-input" type="checkbox" name="basket" value="filter-basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
             </fieldset>
             <button class="button form-button" type="submit">Показать</button>
           </form>
@@ -148,13 +188,16 @@
   </main>
   <footer class="main-footer">
     <section class="contacts">
-      <h2 class="sr-only">Контакты</h2>
-      <h3>NЁRDS DESIGN STUDIO</h3>
-      <p class="contacts-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-      <a class="button contacts-button" href="#">Напишите нам</a>
-      <!-- <img src="img/map.png" alt="Карта где находится студия">
-      <img src="img/map-marker.png" alt="Маркер указывающий в каком доме находится студия"> -->
+      <div class="container">
+        <div class="location">
+          <h2 class="sr-only">Контакты</h2>
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p class="contacts-address">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+          <p class="contacts-phone"><a href="tel:+78005558628">+7 800 555-86-28</a></p>
+          <a class="button contacts-button" href="#">Напишите нам</a>
+        </div>
+      </div>
+      <img src="img/map.png" alt="">
     </section>
     <div class="container">
       <section class="footer-social">
