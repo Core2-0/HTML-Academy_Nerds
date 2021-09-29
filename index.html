@@ -34,32 +34,27 @@
     <section class="main-slider">
       <h2 class="sr-only">Слайдер</h2>
       <div class="container">
-        <div class="slide">
-          <div class="slider-text">
-            <p class="slider-headler">Долго, дорого, скрупулезно.</p>
-            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+        <ul class="slider-list slider-background-1">
+          <li class="slider-item slide slide-current">
+            <h3 class="slider-title">Долго, дорого, скрупулезно.</h3>
+            <p class="slider-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="button slider-button" href="#"><span>Узнать больше</span></a>
-          </div>
-          <img src="img/slider/smartfons.png" width="760" height="431"
-            alt="Три смартфона, демонстрирующие дизайн мобильного приложения">
-        </div>
-        <div class="slide">
-          <div class="slider-text">
-            <p class="slider-headler">Любим математику как никто другой</p>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+          </li>
+          <li class="slider-item slide">
+            <h3 class="slider-title">Любим математику как никто другой</h3>
+            <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
             <a class="button slider-button" href="#"><span>Узнать больше</span></a>
-          </div>
-          <img src="img/slider/monitors.png" width="760" height="431"
-            alt="Два монитора, демонстрирующие пропорции дизайна">
-        </div>
-        <div class="slide">
-          <div class="slider-text">
-            <p class="slider-headler">Только ночь, только хардкор</p>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          </li>
+          <li class="slider-item slide">
+            <h3 class="slider-title">Только ночь, только хардкор</h3>
+            <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a class="button slider-button" href="#"><span>Узнать больше</span></a>
-          </div>
-          <img src="img/slider/pad&phone.png" width="760" height="431"
-            alt="Планшет и телефон, демонстрирующие гибкость дизайна">
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <button class="current" type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
         </div>
       </div>
     </section>
@@ -92,7 +87,8 @@
         <h2 class="sr-only">О нас</h2>
         <div class="column-slogan">
           <p class="about-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-          <p class="about-slogan-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
+          <p class="about-slogan-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+            креатива. Работаем не
             покладая
             рук, как роботы.</p>
           <h3>Выполняем заказы на разработку:</h3>
@@ -138,13 +134,16 @@
   </main>
   <footer class="main-footer">
     <section class="contacts">
-      <h2 class="sr-only">Контакты</h2>
-      <h3>NЁRDS DESIGN STUDIO</h3>
-      <p class="contacts-address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-      <a class="button contacts-button" href="#">Напишите нам</a>
-      <!-- <img src="img/map.png" alt="Карта где находится студия">
-      <img src="img/map-marker.png" alt="Маркер указывающий в каком доме находится студия"> -->
+      <div class="container">
+        <div class="location">
+          <h2 class="sr-only">Контакты</h2>
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p class="contacts-address">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+          <p class="contacts-phone"><a href="tel:+78005558628">+7 800 555-86-28</a></p>
+          <a class="button contacts-button" href="#">Напишите нам</a>
+        </div>
+      </div>
+      <img src="img/map.png" alt="">
     </section>
     <div class="container">
       <section class="footer-social">
