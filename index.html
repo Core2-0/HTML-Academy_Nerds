@@ -173,13 +173,28 @@
             </a>
           </li>
         </ul>
-        <div class="main-footer-text">
+        <div class="main-footer-slogan">
           <p class="main-footer-headler">Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+          <p class="main-footer-text">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
     </div>
   </footer>
+  <section class="feedback">
+    <h2 class="feedback-headler">Напишите нам</h2>
+    <button class="button-close-feedback" type="button" aria-label="Закрыть"></button>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <label>Ваше имя:
+        <input type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+      <label>Ваш email:
+        <input type="email" name="email" placeholder="email@example.com">
+      </label>
+      <label for="feedback-post">Текст письма:</label>
+        <textarea id="feedback-post" name="feedback-post">В свободной форме</textarea>
+      <a class="button feedback-button" href="#">Отправить</a>
+    </form>
+  </section>
 </body>
 
 </html>
