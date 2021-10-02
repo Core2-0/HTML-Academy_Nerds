@@ -6,7 +6,7 @@
   <title>Служебная страница</title>
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
   <link rel="icon" href="favico.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -74,6 +74,21 @@
       </section>
     </div>
   </footer>
+  <section class="modal-feedback">
+    <h2 class="feedback-headler">Напишите нам</h2>
+    <button class="button-close-feedback" type="button" aria-label="Закрыть"></button>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <label>Ваше имя:
+        <input type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+      <label>Ваш email:
+        <input type="email" name="email" placeholder="email@example.com">
+      </label>
+      <label for="feedback-post">Текст письма:</label>
+        <textarea id="feedback-post" name="feedback-post" placeholder="В свободной форме"></textarea>
+      <a class="button feedback-button" href="#">Отправить</a>
+    </form>
+  </section>
 </body>
 
 </html>
