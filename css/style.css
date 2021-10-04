@@ -1118,6 +1118,8 @@ iframe {
 
 .modal-feedback {
   position: fixed;
+  left: 0;
+  right: 0;
   bottom: 180px;
   width: 760px;
   height: 470px;
