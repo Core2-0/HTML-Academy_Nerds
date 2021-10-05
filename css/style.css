@@ -58,6 +58,7 @@
   --feedback-container-shadow: rgba(0, 0, 0, 0.4);
   --border-gray-btn: #dbdbdb;
   --products-text: #666666;
+  --border-input-hover: #b4b9bb;
 }
 
 /* Global */
@@ -258,7 +259,7 @@ img {
 
 .slide-current {
   display: block;
-  max-width: 400px;
+  max-width: 515px;
 }
 
 .slider-title {
@@ -1131,6 +1132,15 @@ iframe {
   display: none;
 }
 
+.modal-feedback-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-feedback-error {
+  animation: shake 0.6s;
+}
+
 .feedback-headler {
   font-weight: 700;
   font-size: 45px;
@@ -1181,28 +1191,87 @@ iframe {
   line-height: 18px;
   color: var(--basic-black-light);
   opacity: 0.5;
-  border: 2px solid var(--range);
+  outline: 2px solid var(--range);
+  border: none;
   border-radius: 3px;
-  padding: 14px 0 14px 14px;
+  padding: 14px;
   margin: 10px 0 33px 0;
 }
 
 .feedback-form textarea {
   width: 740px;
-  height: 100px;
+  height: 88px;
   resize: none;
   margin: 0 0 47px 0;
   font-family: inherit;
   line-height: 18px;
   color: var(--basic-black-light);
   opacity: 0.5;
-  border: 2px solid var(--range);
+  outline: 2px solid var(--range);
+  border: none;
   border-radius: 3px;
-  padding: 15px 0 0 15px;
+  padding: 15px;
   margin: 8px 0 48px 0;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  outline: 2px solid var(--border-input-hover);
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: 2px solid var(--basic-black);
+}
+
+.feedback-form input:invalid {
+  outline: 2px solid var(--basic-red-hover);
+  color: var(--basic-red-hover);
 }
 
 .feedback-button {
   padding: 0 83px;
   height: 50px;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

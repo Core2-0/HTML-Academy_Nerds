@@ -53,17 +53,17 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-button" href="https://vk.com">
-              <img src="img/socials/vk.svg" alt="">
+              <img src="img/socials/vk.svg" alt="Вконтакте">
             </a>
           </li>
           <li class="social-item">
             <a class="social-button" href="https://facebook.com">
-              <img src="img/socials/fb.svg" alt="">
+              <img src="img/socials/fb.svg" alt="Фейсбук">
             </a>
           </li>
           <li class="social-item">
             <a class="social-button" href="https://instagram.com">
-              <img src="img/socials/insta.svg" alt="">
+              <img src="img/socials/insta.svg" alt="Инстаграм">
             </a>
           </li>
         </ul>
@@ -78,17 +78,18 @@
     <h2 class="feedback-headler">Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <label>Ваше имя:
-        <input type="text" name="name" placeholder="Имя Фамилия">
+        <input type="text" name="name" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\sa-zA-Z\s]{2,20}$">
       </label>
       <label>Ваш email:
         <input type="email" name="email" placeholder="email@example.com">
       </label>
       <label for="feedback-post">Текст письма:</label>
         <textarea id="feedback-post" name="feedback-post" placeholder="В свободной форме"></textarea>
-        <button class="button feedback-button">Отправить</button>
-        <button class="button-close-feedback" type="button" aria-label="Закрыть"></button>
+      <button class="button feedback-button">Отправить</button>
+      <button class="button-close-feedback" type="button" aria-label="Закрыть"></button>
     </form>
   </section>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

@@ -195,10 +195,8 @@
   <footer class="main-footer">
     <section class="contacts">
       <h2 class="sr-only">Контакты</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.7812011780602!2d30.309703578313158!3d59.968952817133726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1633076924672!5m2!1sru!2sru"
-        allowfullscreen
-        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.7812011780602!2d30.309703578313158!3d59.968952817133726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1633076924672!5m2!1sru!2sru"
+          allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург" loading="lazy"></iframe>
       <div class="container">
         <div class="location">
           <h3>NЁRDS DESIGN STUDIO</h3>
@@ -214,17 +212,17 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-button" href="https://vk.com">
-              <img src="img/socials/vk.svg" alt="">
+              <img src="img/socials/vk.svg" alt="Вконтакте">
             </a>
           </li>
           <li class="social-item">
             <a class="social-button" href="https://facebook.com">
-              <img src="img/socials/fb.svg" alt="">
+              <img src="img/socials/fb.svg" alt="Фейсбук">
             </a>
           </li>
           <li class="social-item">
             <a class="social-button" href="https://instagram.com">
-              <img src="img/socials/insta.svg" alt="">
+              <img src="img/socials/insta.svg" alt="Инстаграм">
             </a>
           </li>
         </ul>
@@ -239,17 +237,18 @@
     <h2 class="feedback-headler">Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <label>Ваше имя:
-        <input type="text" name="name" placeholder="Имя Фамилия">
+        <input type="text" name="name" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\sa-zA-Z\s]{2,20}$">
       </label>
       <label>Ваш email:
         <input type="email" name="email" placeholder="email@example.com">
       </label>
       <label for="feedback-post">Текст письма:</label>
-      <textarea id="feedback-post" name="feedback-post" placeholder="В свободной форме"></textarea>
+        <textarea id="feedback-post" name="feedback-post" placeholder="В свободной форме"></textarea>
       <button class="button feedback-button">Отправить</button>
       <button class="button-close-feedback" type="button" aria-label="Закрыть"></button>
     </form>
   </section>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
