@@ -6,7 +6,6 @@ request.send();
 
 request.onload = () => {
   const products = request.response;
-  createCard(products);
   renderCard(products);
 };
 
@@ -34,12 +33,13 @@ const createCard = (products) => {
   let text = makeElement('p', '', products.description);
   description.appendChild(text);
 
-  let priceButton = makeElement('a', 'button', products.price + ' ₽');
+  let priceButton = makeElement('a', 'button', `${products.price} ₽`);
   priceButton.classList.add('products-item-button');
   description.appendChild(priceButton);
 
   let picture = makeElement('img', '');
   picture.src = products.imgUrl;
+  picture.alt = `${products.description} ${products.title}`;
   listItem.appendChild(picture);
 
   return listItem;

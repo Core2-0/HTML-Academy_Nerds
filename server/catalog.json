@@ -2,7 +2,7 @@
   {
     "imgUrl": "img/shapes-catalog/sedona.png",
     "title": "Sedona",
-    "description": "Информационный сайт:nbsp; для туристов",
+    "description": "Информационный сайт для туристов",
     "price": "9 900"
   },
   {
@@ -14,13 +14,13 @@
   {
     "imgUrl": "img/shapes-catalog/barbershop.png",
     "title": "Barbershop",
-    "description": "Сайт салона красоты.<br> Для мужчин, да.",
+    "description": "Сайт салона красоты. Для мужчин, да.",
     "price": "9 900"
   },
   {
     "imgUrl": "img/shapes-catalog/mishka.png",
     "title": "MISHKA",
-    "description": "Интернет-магазин<br> вязаных игрушек",
+    "description": "Интернет-магазин вязаных игрушек",
     "price": "9 900"
   },
   {
