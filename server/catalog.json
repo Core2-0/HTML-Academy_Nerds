@@ -1,0 +1,38 @@
+[
+  {
+    "imgUrl": "img/shapes-catalog/sedona.png",
+    "title": "Sedona",
+    "description": "Информационный сайт для туристов",
+    "price": "9 900"
+  },
+  {
+    "imgUrl": "img/shapes-catalog/pink.png",
+    "title": "Pink App",
+    "description": "Продуктовый лендинг приложения для iOS и Android",
+    "price": "9 900"
+  },
+  {
+    "imgUrl": "img/shapes-catalog/barbershop.png",
+    "title": "Barbershop",
+    "description": "Сайт салона красоты. Для мужчин, да.",
+    "price": "9 900"
+  },
+  {
+    "imgUrl": "img/shapes-catalog/mishka.png",
+    "title": "MISHKA",
+    "description": "Интернет-магазин вязаных игрушек",
+    "price": "9 900"
+  },
+  {
+    "imgUrl": "img/shapes-catalog/aplus.png",
+    "title": "A Plus",
+    "description": "Лендинг курсов повышения квалификации",
+    "price": "9 900"
+  },
+  {
+    "imgUrl": "img/shapes-catalog/kvast.png",
+    "title": "КВАСТ",
+    "description": "Промо-сайт производителя крафтового кваса",
+    "price": "9 900"
+  }
+]
