@@ -6,7 +6,7 @@
   <title>HTML Academy: Nёrds</title>
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
   <link rel="icon" href="favico.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -34,18 +34,18 @@
     <section class="main-slider">
       <h2 class="sr-only">Слайдер</h2>
       <div class="container">
-        <ul class="slider-list slider-background-1">
-          <li class="slider-item slide slide-current">
+        <ul class="slider-list">
+          <li class="slide slider-item slide-current" data-id="1">
             <h3 class="slider-title">Долго, дорого, скрупулезно.</h3>
             <p class="slider-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="button slider-button" href="#"><span>Узнать больше</span></a>
           </li>
-          <li class="slider-item slide">
+          <li class="slide slider-item" data-id="2">
             <h3 class="slider-title">Любим математику как никто другой</h3>
             <p class="slider-text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
             <a class="button slider-button" href="#"><span>Узнать больше</span></a>
           </li>
-          <li class="slider-item slide">
+          <li class="slide slider-item" data-id="3">
             <h3 class="slider-title">Только ночь, только хардкор</h3>
             <p class="slider-text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.
             </p>
@@ -53,9 +53,9 @@
           </li>
         </ul>
         <div class="slider-controls">
-          <button class="current" type="button" aria-label="Первый слайд"></button>
-          <button type="button" aria-label="Второй слайд"></button>
-          <button type="button" aria-label="Третий слайд"></button>
+          <button class="slider-control current" type="button" data-slide="1" aria-label="Первый слайд"></button>
+          <button class="slider-control" type="button" data-slide="2" aria-label="Второй слайд"></button>
+          <button class="slider-control" type="button" data-slide="3" aria-label="Третий слайд"></button>
         </div>
       </div>
     </section>
@@ -199,7 +199,7 @@
   <script src="js/popup.min.js"></script>
   <script src="js/slider.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script src="js/map.js"></script>
+  <script src="js/map.min.js"></script>
 </body>
 
 </html>
