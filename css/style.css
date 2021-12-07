@@ -227,18 +227,6 @@ img {
 
 /* Main-slider */
 
-.slider-background-1 {
-  background: url("../img/slider/smartfons.png") right/760px 431px no-repeat;
-}
-
-.slider-background-2 {
-  background: url("../img/slider/monitors.png") right/760px 431px no-repeat;
-}
-
-.slider-background-3 {
-  background: url("../img/slider/pad&phone.png") right/760px 431px no-repeat;
-}
-
 .main-slider {
   position: relative;
   background-color: var(--background-gray);
@@ -256,6 +244,31 @@ img {
 
 .slide {
   display: none;
+}
+
+.slider-item {
+  position: relative;
+}
+
+.slider-item::after {
+  content: '';
+  position: absolute;
+  width: 760px;
+  height: 431px;
+  top: -80px;
+  left: 76%;
+}
+
+.slider-item[data-id="1"]::after {
+  background: url("../img/slider/smartfons.png") right/760px 431px no-repeat;
+}
+
+.slider-item[data-id="2"]::after {
+  background: url("../img/slider/monitors.png") right/760px 431px no-repeat;
+}
+
+.slider-item[data-id="3"]::after {
+  background: url("../img/slider/pad&phone.png") right/760px 431px no-repeat;
 }
 
 .slide-current {
