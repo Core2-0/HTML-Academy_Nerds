@@ -1,3 +1,5 @@
+'use strict'
+
 let requestURL = 'server/catalog.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -40,6 +42,8 @@ const createCard = (products) => {
   let picture = makeElement('img', '');
   picture.src = products.imgUrl;
   picture.alt = `${products.description} ${products.title}`;
+  picture.style.width = '358px';
+  picture.style.height = '578px';
   listItem.appendChild(picture);
 
   return listItem;

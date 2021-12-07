@@ -996,12 +996,12 @@ img {
   line-height: 47px;
 }
 
-.pagination-link:hover,
+.pagination-link:hover[href],
 .pagination-link:focus {
   background-color: var(--basic-gray2);
 }
 
-.pagination-link:active {
+.pagination-link:active[href] {
   background-color: var(--basic-gray3);
   box-shadow: inset 0px 3px 0px var(--btn-gray-shadow);
 }
