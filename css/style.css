@@ -173,15 +173,15 @@ img {
   width: 160px;
   height: 65px;
   color: var(--basic-black);
+}
+
+.main-header-logo:hover[href],
+.main-header-logo:focus[href] {
+  opacity: 0.7;
   cursor: pointer;
 }
 
-.main-header-logo:hover,
-.main-header-logo:focus {
-  opacity: 0.7;
-}
-
-.main-header-logo:active {
+.main-header-logo:active[href] {
   opacity: 0.3;
 }
 
