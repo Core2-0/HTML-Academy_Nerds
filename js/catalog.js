@@ -17,7 +17,7 @@ const makeElement = (tagName, className, text) => {
     element.classList.add(className);
   }
   if (text) {
-    element.textContent = text;
+    element.innerHTML = text;
   }
   return element;
 };
